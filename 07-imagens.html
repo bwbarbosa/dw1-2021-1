@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Imagens</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
     <style>
         /* Regras iniciadas com # se aplicam ao elemento com o id de mesmo nome */
         #logo {
@@ -58,7 +61,29 @@
 
     <img style="width: 50%; border: 1px solid blue;" src="img/svg-logo.svg" alt="Logotipo do formato svg">
 
+    <!--
+        A tag <img> pertence ao grupo dos ELEMENTOS DE LINHA, ou seja,
+        vários <img> em sequencia havendo largura suficiente, serão exibidos
+        na mesma linha.
+        
+        Já a tag <div> (divisão) pertence ao grupo dos ELEMENTOS DE BLOCO. Cada
+        elemento desse grupo ocupa´ra, por padrão, toda a largura disponivel,
+        deslocando os demais para baixo
+    -->
+
+    <div style="background: yellow">
+        <img src="img/apptiva-icon.png" alt="Ícone do Apptiva">
+    </div>
+
+    <!--
+        Via CSS, é possível fazer um elemento de Linha se comportar como um
+        elemento de bloco
+    -->
+    <img style="display: block" src="img/apptiva-icon.png" alt="Ícone do Apptiva">
+
+    <img src="img/apptiva-icon.png" alt="Ícone do Apptiva">
     
-    
+    <img src="img/apptiva-icon.png" alt="Ícone do Apptiva">
+
 </body>
 </html>
