@@ -13,8 +13,15 @@
         Neste exercício, você precisará criar mais três páginas HTML:
 
         1) araras.html -> deverá exibir a imagem das araras de forma dinâmica, trocando
-           entre os tamanhos P, M e G conforme a largura da janela do navegador mude.
+           entre os tamanhos P, M e G conforme a largura da janela do navegador mude.-->
 
+        <picture> 
+            <source media="(max-width: 630px)" srcset="araras-p.jpg" type="image/jpeg"> 
+            <source media="(max-width: 1030px)" srcset="araras-m.jpg" type="image/jpeg">
+            <img src="araras-g.jpg" alt="araras g">
+        </picture>
+
+        <!--
         2) cursoemvideo.html -> deverá exibir o seguinte vídeo incorporado: 
            https://www.youtube.com/watch?v=Ejkb_YpuHWs
 
