@@ -1,0 +1,35 @@
+div.container {
+    background-color: darkgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px; /*espaçamento interno*/
+    border-left: 7px dotted black;
+    border-right: 7px dashed blue;
+}
+
+/* divs internas */
+div.container div {
+    border: 1px solid red;
+    padding: 12px;
+    margin-bottom: 16px; /*apenas a margem inferior*/
+}
+
+#box1 {
+    background-color: goldenrod;
+    /* Na próxima linha os dois valores seguem a ordem para o sinal da cruz: o primeiro valor serve para top(acima) bottom(abaixo) e o segundo right(direita) left(esquerda)
+}
+
+#box2 {
+    background-color: lightskyblue;
+    /*
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 25px;
+    padding-right: 8px;
+    -Invés de usar as 4 linhas acima, podemos usar a próxima linha*/
+    padding: 30px 8px 25px 40px; /*a ordem começa no topo, direita, embaixo e esquerda*/
+}
+
+#box3 {
+    background-color: yellowgreen;
+    margin-bottom: 0px;
+}

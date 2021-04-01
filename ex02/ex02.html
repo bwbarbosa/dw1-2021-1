@@ -13,24 +13,36 @@
         Neste exercício, você precisará criar mais três páginas HTML:
 
         1) araras.html -> deverá exibir a imagem das araras de forma dinâmica, trocando
-           entre os tamanhos P, M e G conforme a largura da janela do navegador mude.-->
-
-        <picture> 
-            <source media="(max-width: 630px)" srcset="araras-p.jpg" type="image/jpeg"> 
+           entre os tamanhos P, M e G conforme a largura da janela do navegador mude.
+         
+        <picture>
+            <source media="(max-width: 630px)" srcset="araras-p.jpg" type="image/jpeg">
             <source media="(max-width: 1030px)" srcset="araras-m.jpg" type="image/jpeg">
-            <img src="araras-g.jpg" alt="araras g">
+            <img src="araras-g.jpg" alt="Araras g/jpeg">
         </picture>
+    -->
 
-        <!--
+    <!--
         2) cursoemvideo.html -> deverá exibir o seguinte vídeo incorporado: 
            https://www.youtube.com/watch?v=Ejkb_YpuHWs
+    
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ejkb_YpuHWs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    --> 
 
+
+    <!--
         3) aplausos.html -> deverá exibir o player para o seguinte arquivo de áudio:
            https://sound-effects-media.bbcrewind.co.uk/mp3/07003050.mp3
-
-        Em cada uma dessas páginas, coloque também um link de texto para voltar para a página index.html.
-
+    
+        <audio controls src="https://sound-effects-media.bbcrewind.co.uk/mp3/07003050.mp3"></audio>
     -->
+
+    <!--
+        Em cada uma dessas páginas, coloque também um link de texto para voltar para a página index.html.
+    -->
+
+
+    
     <div class="galeria">
         <figure>
             <!--
@@ -38,6 +50,8 @@
                 araras.html
                 Não se esqueça de providenciar o figcaption desta figura.
             -->
+            <img src="araras-thumb.jpg" alt="araras-thumb">
+            <a href="araras.html">Site oficial das araras</a>
         </figure>
         <figure>
             <!--
@@ -45,6 +59,8 @@
                 cursoemvideo.html
                 Não se esqueça de providenciar o figcaption desta figura.
             -->
+            <img src="cursoemvideo-thumb.jpg" alt="cursoemvideo-thumb">
+            <a href="cursoemvideo.html">Vídeo oficial do curso em vídeo</a>
         </figure>
         <figure>
             <!--
@@ -52,6 +68,8 @@
                 aplausos.html
                 Não se esqueça de providenciar o figcaption desta figura.
             -->
+            <img src="aplausos-thumb.jpg" alt="aplausos-thumb">
+            <a href="aplausos.html">Áudio oficial dos aplausos</a>
         </figure>
 
     </div>
