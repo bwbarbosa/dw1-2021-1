@@ -1,0 +1,15 @@
+/* CSS reset - ASTERISCO(linha 2) pega todos os elementos e dá ZERO para todos os parâmetros(padding e margin)*/
+*{ /* Todos os elementos*/
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: #550000;
+    padding: 10px 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 10px;
+}
