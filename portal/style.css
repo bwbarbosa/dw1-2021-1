@@ -1,7 +1,20 @@
+/* @import, quando existem, devem ser o primeiro item de um arquivo CSS */
+
 /* CSS reset - ASTERISCO(linha 2) pega todos os elementos e dá ZERO para todos os parâmetros(padding e margin)*/
 *{ /* Todos os elementos*/
     padding: 0;
     margin: 0;
+    /* 
+    Exemplo de fontes SEM serifa
+    font-family: 'calibri', 'arial', 'Sans';
+    
+    Exemplo de fontes COM serifa
+    font-family: 'Georgia', 'Times New Roman', Serif;
+
+    Exemplo de fontes MONOESPAÇADA
+    font-family: 'Consolas', Courier New', 'Monospace';
+    */
+    font-family: Raleway, calibri, arial, sans;
 }
 
 header{
@@ -12,4 +25,9 @@ header{
 nav ul li{
     display: inline-block;
     margin: 10px;
+}
+
+nav{
+    background-color: #ff7f2a;
+    color: #FFFFFF;
 }
