@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quebrada On Line</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
 </head>
 <body>
     <header> <!-- Cabeçalho -->
@@ -26,8 +33,7 @@
     </nav>
 
     <div id="content"> <!-- Área do conteúdo -->
-        <section id="principal"> <!-- section - agrupador de conteudos semelhantes -->
-            <!-- Dentro de uma section, segundo as especificações, espera-se ter um título-->
+        <main> <!-- Divisão principal do site -->
             <h1>Notícias</h1>
 
             <article class="destaque"> <!-- Representa um artigo ou notícia -->
@@ -57,23 +63,39 @@
                 <p>Populaçã revoltada contra o aumento do preços promovidos por Ademir do Bar</p>
             </article>
 
-        </section>
+        </main>
         
-        <section id="secundario">
+        <aside>
             <h1>Conteúdo relacionado</h1>
 
-            <aside>
+            <article>
                 <img src="relacionado01.png" alt="Foto de folhas" title="Foto: Sohail" >
                 <h1><a href="#"> Mulher do verdureiro emagrece 30kg tomando chá e choca a quebrada; SAIBA MAIS</a></h1>
+            </article>
 
-            </aside>
+            <article>
+                <img src="relacionado02-320x240.jpg" alt="Homem bem sucedido" title="Foto: Andrea Piacquadio" >
+                <h1><a href="#"> Tenho uma oportunidade para você! NÃO É PIRÂMIDE</a></h1>
+            </article>
 
-        </section>
+        </aside>
  
     </div>
 
     <footer> <!-- Rodapé -->
-        
+        <ul>
+            <li><a href="#">Quem somos</a></li>
+            <li><a href="#">Nossa missão</a></li>
+            <li><a href="#">Comercial</a></li>
+        </ul>
+
+        <address>
+            Rua do Sobe e Desce, 33 <br>
+            Morro Alto de Cima/SP <br>
+            <a href="tel:+551666661111">(16) 6666-1111</a>
+            <a href="mailton:contato@qol.com.br">contato@qol.com.br</a>
+        </address>
+
     </footer>
 
 </body>
