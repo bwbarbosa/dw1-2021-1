@@ -49,6 +49,34 @@ a:hover {   /* Mouse passando em cima do link */
 header{
     background-color: var(--cor-primaria);
     padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#social {
+    background-color: transparent; /* Tira a cor do fundo */
+    display: flex;
+    align-items: center;
+}
+
+#social img {
+    width: 32px;
+}
+
+#social a{
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#social a span {
+    margin-left: 6px;
+    display: none; /* Esconder o texto dos links */
+}
+
+#social a:hover span {
+    visibility: inline; /* Mostra novamente o texto ao passar o mouse */
 }
 
 nav ul li{
@@ -59,6 +87,27 @@ nav ul li{
 nav{
     background-color: var(--cor-secundaria);
     color: var(--cor-texto-clara);
+}
+
+#menu {
+    padding: 0 20px;
+}
+
+#menu a {
+    margin: 10 px 0;
+}
+
+#menu a {
+    height: 100%;
+    padding: 10px;
+    color: #FFFFFF;
+    transition: 300ms;
+    background-color: var(--cor-secundaria);
+}
+
+#menu a:hover {
+    filter: brightness(0.8); /* Diminui o brilho em 20%, deixando mais escuro */
+    text-decoration: none;
 }
 
 #content { /* Comando com #(cerquilha) será para tudo que está dentro da div content */
@@ -163,7 +212,7 @@ footer {
     color: #FFFFFF;
     display: flex;
     flex-direction: row;
-    align-content: space-between; /* Dá espaço automaticamento entre os itens de um flexbox */
+    justify-content: space-around; /* Dá espaço automaticamento entre os itens de um flexbox */
 }
 
 footer a {
@@ -173,6 +222,15 @@ footer a {
 footer ul li {
     display: inline-block; /* Coloca os itens de uma lista na horizontal */
     padding: 0 12px;
-    border-right: 1px solid #FFFFFF;
-
+    border-right: 2px solid #FFFFFF;
 }
+
+footer ul li:last-child {
+    border-right: none;
+}
+
+footer img {
+    width: 200px;
+    height: 100%;
+}
+
